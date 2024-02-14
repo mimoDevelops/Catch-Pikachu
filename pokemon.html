@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Catch Pikachu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zingtouch@1.0.2/dist/zingtouch.min.js"></script>
+
+
+</head>
+<body>
+    <section id="wrapper">
+        <div id="title">
+          <h1>Catch Pikachu!</h1>
+        </div>
+        <div id="info-button" onclick="toggleInfoScreen()">?</div>
+        <div id="info-screen" class="hidden">
+          <div id="info-shade"></div>
+          <div id="info-text">
+            <h3>Catch Pikachu:</h3>
+            <ul>
+              <li>Swipe the pokeball straight up, with just enough velocity </li>
+              <li>The smaller the green circle, the greater chance in catching omanyte!</li>
+            </ul>
+          </div>
+      
+        </div>
+        <div id="touch-layer"></div>
+        <div id="particles"></div>
+        <div id="ring-screen">
+          <div id="ring">
+            <div id="ring-active">
+              <div id="ring-fill"></div>
+            </div>
+          </div>
+        </div>
+        <div id="screen" class="gradient-background">
+          <div id="target-container">
+            <div id="target"></div>
+          </div>
+          <div id="ball"></div>
+          <div id="output"></div>
+        </div>
+      
+      
+        <div id="capture-screen" class="gradient-background hidden">
+          <div id="capture-status" class="hidden">
+            You caught Pikachu !
+          </div>
+          <div id="poof-container" class="hidden">
+            <div id="poof"></div>
+          </div>
+          <div id="capture-confetti"></div>
+          <div id="capture-ball"></div>
+          <div id="capture-ball-button-container" class="hidden">
+            <div id="capture-ball-button"></div>
+          </div>
+        </div>
+      
+      
+      </section>
+      <script src="script.js"></script>
+</body>
+</html>
